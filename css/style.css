@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Shrikhand', cursive;*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.header {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  box-shadow: 0px 2px 0px lightslategray;
+  position: relative;
+}
+.header__title {
+  margin: auto;
+  padding: 10px 0px 5px 0px;
+}
+
+.localisation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: lightgrey;
+  text-align: center;
+  padding: 5px;
+}
+
+.reservation {
+  text-align: center;
+  background-color: #f3f3f3;
+  padding-bottom: 50px;
+}
+.reservation__title {
+  padding: 30px 60px 0px 60px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.reservation__texte {
+  padding: 10px 40px 0px 40px;
+  margin-top: auto;
+}
+.reservation__btn {
+  height: 35px;
+  width: 200px;
+  border: 1px;
+  background-image: linear-gradient(to top, #9356dc, #FF79da);
+  color: white;
+  border-radius: 25px;
+  box-shadow: 0px 3px 0px lightgray;
+  transition: all 200ms;
+}
+.reservation__btn:hover {
+  opacity: 0.9;
+  box-shadow: 0px 5px 0px darkgray;
+}
+
+.footer {
+  background-color: rgb(48, 46, 46);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer__h2 {
+  font-family: "Shrikhand", cursive;
+  margin-left: 20px;
+  font-size: medium;
+  padding-top: 15px;
+}
+.footer__link {
+  color: white;
+}
+.footer ul {
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */

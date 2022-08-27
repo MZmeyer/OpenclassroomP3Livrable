@@ -1,0 +1,19 @@
+{
+  "name": "openclassroomp3livrable",
+  "version": "1.0.0",
+  "description": "Projet3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MZmeyer/OpenclassroomP3Livrable.git"
+  },
+  "author": "M.Zuckmeyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MZmeyer/OpenclassroomP3Livrable/issues"
+  },
+  "homepage": "https://github.com/MZmeyer/OpenclassroomP3Livrable#readme"
+}
