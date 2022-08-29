@@ -12,17 +12,17 @@
     text-align: center;
     background-color: #f3f3f3;
     padding-bottom: 50px;       
-     &__title{
+     &--title{
         padding: 30px 60px 0px 60px;
         margin-top: auto;
         margin-bottom: auto;
     }
-    &__texte {
+    &--texte {
         padding: 10px 40px 0px 40px;
         margin-top: auto;
     }
-    &__btn{
-        height: 35px;
+    &--btn{
+        height: 45px;
         width: 200px;
         border: 1px;
         background-image: linear-gradient(to top,#9356dc,#FF79da);
@@ -36,4 +36,52 @@
             }
     }
  } 
- 
+ .fonctionnement{    
+    &--bloc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    
+    }
+    &--carte{
+        display: flex;
+        width:330px; 
+        height: 80px;       
+        align-items: center;        
+        border-radius: 25px;
+        background-color: #f3f3f3;
+        justify-content: space-evenly;
+        padding-right: 60px;
+        box-shadow: 0px 3px 0px lightgray;
+        p{
+            color: black;
+        }
+        
+    }
+    &--h2{
+        padding-left: 25px;
+
+    }    
+    &--icone{
+        color: darkgray;
+    }
+    &--number{       
+        color: white;
+        border: solid 2px #9356dc;
+        background-color: #9356dc;
+        border-radius: 50%;
+        position: relative;
+        left: -23px;
+        height: 1.5rem;
+        padding-left: 6px;
+        width: 1.5rem;
+}
+    
+ }
+ .restaurant{
+    &--h2{
+        padding-left: 25px;
+    }
+ }

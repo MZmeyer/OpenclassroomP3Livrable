@@ -1,20 +1,21 @@
 .footer{
     background-color: rgb(48, 46, 46);
     color: white;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;    
-    &__h2{
+    &--h2{
         font-family: 'Shrikhand', cursive;
         margin-left: 20px;    
         font-size: medium;
         padding-top: 15px;
     }
-    &__link{
+    &--link{
         color: white;
         
     }
     ul{
         list-style: none;
+        margin-bottom: 0;
     }
 }

@@ -32,7 +32,7 @@ a:active {
   box-shadow: 0px 2px 0px lightslategray;
   position: relative;
 }
-.header__title {
+.header--title {
   margin: auto;
   padding: 10px 0px 5px 0px;
 }
@@ -52,17 +52,17 @@ a:active {
   background-color: #f3f3f3;
   padding-bottom: 50px;
 }
-.reservation__title {
+.reservation--title {
   padding: 30px 60px 0px 60px;
   margin-top: auto;
   margin-bottom: auto;
 }
-.reservation__texte {
+.reservation--texte {
   padding: 10px 40px 0px 40px;
   margin-top: auto;
 }
-.reservation__btn {
-  height: 35px;
+.reservation--btn {
+  height: 45px;
   width: 200px;
   border: 1px;
   background-image: linear-gradient(to top, #9356dc, #FF79da);
@@ -71,29 +71,73 @@ a:active {
   box-shadow: 0px 3px 0px lightgray;
   transition: all 200ms;
 }
-.reservation__btn:hover {
+.reservation--btn:hover {
   opacity: 0.9;
   box-shadow: 0px 5px 0px darkgray;
+}
+
+.fonctionnement--bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+}
+.fonctionnement--carte {
+  display: flex;
+  width: 330px;
+  height: 80px;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #f3f3f3;
+  justify-content: space-evenly;
+  padding-right: 60px;
+  box-shadow: 0px 3px 0px lightgray;
+}
+.fonctionnement--carte p {
+  color: black;
+}
+.fonctionnement--h2 {
+  padding-left: 25px;
+}
+.fonctionnement--icone {
+  color: darkgray;
+}
+.fonctionnement--number {
+  color: white;
+  border: solid 2px #9356dc;
+  background-color: #9356dc;
+  border-radius: 50%;
+  position: relative;
+  left: -23px;
+  height: 1.5rem;
+  padding-left: 6px;
+  width: 1.5rem;
+}
+
+.restaurant--h2 {
+  padding-left: 25px;
 }
 
 .footer {
   background-color: rgb(48, 46, 46);
   color: white;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
-.footer__h2 {
+.footer--h2 {
   font-family: "Shrikhand", cursive;
   margin-left: 20px;
   font-size: medium;
   padding-top: 15px;
 }
-.footer__link {
+.footer--link {
   color: white;
 }
 .footer ul {
   list-style: none;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
