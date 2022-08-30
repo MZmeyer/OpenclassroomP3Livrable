@@ -9,21 +9,20 @@ body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
 }
-
-a:link {
+body a:link {
   text-decoration: none;
 }
-
-a:visited {
+body a:visited {
   text-decoration: none;
 }
-
-a:hover {
+body a:hover {
   text-decoration: none;
 }
-
-a:active {
+body a:active {
   text-decoration: none;
+}
+body a {
+  color: black;
 }
 
 .header {
@@ -83,27 +82,31 @@ a:active {
   align-items: center;
   height: 300px;
 }
-.fonctionnement--carte {
+.fonctionnement--bloc .bloc--filtre {
   display: flex;
   width: 330px;
-  height: 80px;
+  height: 65px;
   align-items: center;
   border-radius: 25px;
   background-color: #f3f3f3;
   justify-content: space-evenly;
   padding-right: 60px;
   box-shadow: 0px 3px 0px lightgray;
+  transition: all 200ms;
 }
-.fonctionnement--carte p {
+.fonctionnement--bloc .bloc--filtre:hover {
+  box-shadow: 0px 5px 0px darkgray;
+}
+.fonctionnement--bloc .bloc--filtre .filtre--txt {
   color: black;
 }
-.fonctionnement--h2 {
+.fonctionnement--bloc .bloc--filtre .filtre--h2 {
   padding-left: 25px;
 }
-.fonctionnement--icone {
+.fonctionnement--bloc .bloc--filtre .filtre--icone {
   color: darkgray;
 }
-.fonctionnement--number {
+.fonctionnement--bloc .bloc--filtre .filtre--number {
   color: white;
   border: solid 2px #9356dc;
   background-color: #9356dc;
@@ -115,8 +118,51 @@ a:active {
   width: 1.5rem;
 }
 
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f3f3;
+  height: 1200px;
+}
+.restaurant .restaurant--bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1100px;
+}
 .restaurant--h2 {
   padding-left: 25px;
+  margin-right: 225px;
+}
+.restaurant .restaurant--article {
+  display: flex;
+  flex-direction: column;
+  height: 245px;
+  width: 330px;
+  border-radius: 25px;
+  box-shadow: 0px 3px 0px lightgray;
+  transition: all 200ms;
+}
+.restaurant .restaurant--article:hover {
+  box-shadow: 0px 5px 0px darkgray;
+}
+.restaurant .restaurant--article .article--image {
+  object-fit: cover;
+  height: 175px;
+  width: 330px;
+  border-radius: 25px 25px 0px 0px;
+}
+.restaurant .restaurant--article .article--nom h3 {
+  margin: 5px 0px 0px 5px;
+}
+.restaurant .restaurant--article .article--nom p {
+  margin: 5px 0px 0px 5px;
+}
+.restaurant .restaurant--article .article--icone i {
+  position: relative;
+  bottom: 41px;
+  left: 285px;
 }
 
 .footer {
