@@ -16,7 +16,7 @@ height: 175px;
 } 
 .fond{
     background-color: #f3f3f3;
-    height: 2000px;
+    height: fit-content;
     border-radius: 25px 25px 0px 0px;
     position: relative;
     top: -20px;
@@ -27,3 +27,36 @@ height: 175px;
         padding-top: 20px;
     }
 } 
+.carte{
+    font-family: 'Roboto', sans-serif;
+    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    .menu{        
+        border: solid 1px rgb(4, 0, 255);
+        &--titre{
+            border-bottom: solid 3px green ;
+        }
+        &--choix{
+            display: flex;
+            background-color: rgb(80, 173, 235);
+            border-radius: 25px;
+            height: 75px;
+            width: 100%;
+            margin-bottom: 5px;
+            .choix--texte{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 10px 10px 15px 5px;
+                & h4{
+                    margin: 2px 2px 2px 2px;
+                }
+                & p{
+                    margin: 2px 2px 2px 2px;
+                }
+            }
+        }
+
+    }
+}

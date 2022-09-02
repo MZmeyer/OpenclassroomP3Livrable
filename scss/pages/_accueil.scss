@@ -105,10 +105,11 @@
                 height: 245px;
                 width: 330px;
                 border-radius: 25px;  
-                box-shadow: 0px 3px 0px lightgray;
+                box-shadow: 3px 3px 3px 3px lightgray;
                 transition: all 200ms;
                 &:hover{            
-                    box-shadow: 0px 5px 0px darkgray;
+                    box-shadow: 5px 5px 5px 5px darkgray;
+                    opacity: 0.9;
                     }
                     .article--image{
                         object-fit: cover;
