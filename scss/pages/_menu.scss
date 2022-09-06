@@ -14,36 +14,44 @@ height: 175px;
     }
     
 } 
-.fond{
+.fond{    
     background-color: #f3f3f3;
     height: fit-content;
     border-radius: 25px 25px 0px 0px;
     position: relative;
     top: -20px;
-    &--titre{
-        font-family: 'Shrikhand', sans-serif;
+    .entete {
+        display: flex;
+        align-items: center;
+        & h2 {font-family: 'Shrikhand', sans-serif;
         margin-top: 0px;
         margin-left: 20px;
         padding-top: 20px;
+        }
+        & i {
+            margin-left: auto;
+            padding-right: 40px;
+        }
     }
 } 
 .carte{
     font-family: 'Roboto', sans-serif;
-    border: solid 1px red;
+    
     display: flex;
     flex-direction: column;
+    margin: 20px 10px 20px 10px;    
     .menu{        
-        border: solid 1px rgb(4, 0, 255);
+        
         &--titre{
             border-bottom: solid 3px green ;
         }
         &--choix{
             display: flex;
-            background-color: rgb(80, 173, 235);
-            border-radius: 25px;
-            height: 75px;
+            background-color:white;
+            border-radius: 12px;
+            height: 65px;
             width: 100%;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
             .choix--texte{
                 display: flex;
                 flex-direction: column;
@@ -55,8 +63,33 @@ height: 175px;
                 & p{
                     margin: 2px 2px 2px 2px;
                 }
+                
+            }
+            .choix--prix{
+                padding-top: 20px;
+                padding-right: 10px;
+                margin-left: auto;
+                font-weight: bold;
             }
         }
 
     }
+}
+.commande{
+    display: flex;
+    justify-content: center;
+    &--btn{
+        height: 45px;
+        width: 200px;
+        border: 1px;
+        background-image: linear-gradient(to top,#9356dc,#FF79da);
+        color: white;
+        border-radius: 25px;
+        box-shadow: 0px 3px 0px lightgray;
+        transition: all 200ms;
+        &:hover{
+            opacity: 0.9;
+            box-shadow: 0px 5px 0px darkgray;
+            }
+    }    
 }
