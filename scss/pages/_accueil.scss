@@ -99,7 +99,7 @@
                 padding-left: 25px;
                 margin-right: 225px;
                 }
-            .restaurant--article{
+            .restaurant--article{                
                 display: flex;
                 flex-direction: column;
                 height: 245px;
@@ -107,6 +107,11 @@
                 border-radius: 25px;  
                 box-shadow: 3px 3px 3px 3px lightgray;
                 transition: all 200ms;
+                .article--description{
+                    display: flex;
+                    
+                }
+                
                 &:hover{            
                     box-shadow: 5px 5px 5px 5px darkgray;
                     opacity: 0.9;
@@ -127,11 +132,16 @@
 
                     }
                     .article--icone {
+                        
                         & i{
-                            position: relative;
-                            bottom: 41px;    
-                            left: 285px;
-                        }                
+                            margin: 30px 5px 5px 105px;
+                            &:hover{
+                                
+                                                       
+                            }
+                            
+                        }
+                                        
                     }
             }    
  }

@@ -143,6 +143,9 @@ body a {
   box-shadow: 3px 3px 3px 3px lightgray;
   transition: all 200ms;
 }
+.restaurant .restaurant--article .article--description {
+  display: flex;
+}
 .restaurant .restaurant--article:hover {
   box-shadow: 5px 5px 5px 5px darkgray;
   opacity: 0.9;
@@ -160,15 +163,15 @@ body a {
   margin: 5px 0px 0px 5px;
 }
 .restaurant .restaurant--article .article--icone i {
-  position: relative;
-  bottom: 41px;
-  left: 285px;
+  margin: 30px 5px 5px 105px;
 }
-
-.retour i {
-  position: absolute;
-  top: 26px;
-  left: 16px;
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 45px 5px 0px;
+}
+.header .retour i {
+  padding-left: 20px;
 }
 
 .image {
@@ -213,6 +216,7 @@ body a {
   border-bottom: solid 3px green;
 }
 .carte .menu--choix {
+  overflow: hidden;
   display: flex;
   background-color: white;
   border-radius: 12px;
@@ -220,10 +224,19 @@ body a {
   width: 100%;
   margin-bottom: 10px;
 }
+.carte .menu--choix:hover > .choix--prix {
+  transition: all 400ms ease-in-out;
+  transform: translateX(-70px);
+}
+.carte .menu--choix:hover > .choix--valid {
+  transition: all 330ms ease-in-out;
+  transform: translateX(-70px);
+}
 .carte .menu--choix .choix--texte {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  z-index: 1;
   padding: 10px 10px 15px 5px;
 }
 .carte .menu--choix .choix--texte h4 {
@@ -233,10 +246,21 @@ body a {
   margin: 2px 2px 2px 2px;
 }
 .carte .menu--choix .choix--prix {
+  background-color: white;
+  width: 60px;
   padding-top: 20px;
   padding-right: 10px;
   margin-left: auto;
   font-weight: bold;
+  z-index: 2;
+}
+.carte .menu--choix .choix--valid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  margin: -1rem -5rem -1rem 1rem;
+  background-color: aquamarine;
 }
 
 .commande {
