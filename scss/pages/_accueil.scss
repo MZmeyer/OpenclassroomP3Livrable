@@ -36,7 +36,10 @@
             }
     }
  } 
- .fonctionnement{    
+ .fonctionnement{  
+    h2{
+        text-align: center;
+    }  
     &--bloc{
     display: flex;
     flex-direction: column;

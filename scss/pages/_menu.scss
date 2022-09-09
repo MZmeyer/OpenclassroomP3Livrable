@@ -45,13 +45,53 @@ height: 175px;
     display: flex;
     flex-direction: column;
     margin: 20px 10px 20px 10px;    
-    .menu{ 
-               
+    .menu{            
         
         &--titre{
             border-bottom: solid 3px green ;
         }
         &--choix{
+            animation-name: showup;
+            animation-duration: 3s;           
+
+            &:nth-child(1) {
+                animation-delay: 0ms;
+                animation-fill-mode: forwards;
+                opacity:0;
+            }
+            &:nth-child(2) {
+                animation-delay: 200ms;
+                animation-fill-mode: forwards;
+                opacity:0;
+            }
+            &:nth-child(3) {
+                animation-delay: 400ms;
+                animation-fill-mode: forwards;
+                opacity:0;
+            }
+            &:nth-child(4) {
+                animation-delay: 600ms;
+                animation-fill-mode: forwards;
+                opacity:0;
+            }
+            &:nth-child(5) {
+                animation-delay: 600ms;
+                animation-fill-mode: forwards;
+                opacity:0;
+            }
+
+            @keyframes showup {
+                from {
+                    transform: translateY(65px);
+                    opacity:0;
+                }
+                to {
+                    transform: translateY(0);
+                    opacity:1;
+                }
+            }    
+
+
             overflow: hidden;                                    
             display: flex;
             background-color:white;
@@ -65,10 +105,10 @@ height: 175px;
                 transform:  translateX(-70px);
             
                 }
-                &:hover > .choix--valid {
-                    transition: all 330ms ease-in-out;                    
+            &:hover > .choix--valid {
+                transition: all 330ms ease-in-out;                    
                     
-                    transform:  translateX(-70px);
+                transform:  translateX(-70px);
                 
                     }    
             .choix--texte{
@@ -97,7 +137,7 @@ height: 175px;
             }
             .choix--valid{
                 display: flex;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
                 width: 60px;
                 margin: -1rem -5rem -1rem 1rem;

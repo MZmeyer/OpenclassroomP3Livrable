@@ -74,6 +74,9 @@ body a {
   box-shadow: 0px 5px 0px darkgray;
 }
 
+.fonctionnement h2 {
+  text-align: center;
+}
 .fonctionnement--bloc {
   display: flex;
   flex-direction: column;
@@ -165,6 +168,7 @@ body a {
 .restaurant .restaurant--article .article--icone i {
   margin: 30px 5px 5px 105px;
 }
+
 .header {
   display: flex;
   align-items: center;
@@ -216,6 +220,8 @@ body a {
   border-bottom: solid 3px green;
 }
 .carte .menu--choix {
+  animation-name: showup;
+  animation-duration: 3s;
   overflow: hidden;
   display: flex;
   background-color: white;
@@ -223,6 +229,41 @@ body a {
   height: 65px;
   width: 100%;
   margin-bottom: 10px;
+}
+.carte .menu--choix:nth-child(1) {
+  animation-delay: 0ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.carte .menu--choix:nth-child(2) {
+  animation-delay: 200ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.carte .menu--choix:nth-child(3) {
+  animation-delay: 400ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.carte .menu--choix:nth-child(4) {
+  animation-delay: 600ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.carte .menu--choix:nth-child(5) {
+  animation-delay: 600ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes showup {
+  from {
+    transform: translateY(65px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .carte .menu--choix:hover > .choix--prix {
   transition: all 400ms ease-in-out;
@@ -256,7 +297,7 @@ body a {
 }
 .carte .menu--choix .choix--valid {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 60px;
   margin: -1rem -5rem -1rem 1rem;
