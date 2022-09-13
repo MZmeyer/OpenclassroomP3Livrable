@@ -205,9 +205,36 @@ body a {
   margin-left: 20px;
   padding-top: 20px;
 }
-.fond .entete i {
+.fond .entete--like {
   margin-left: auto;
-  padding-right: 40px;
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 21px;
+  width: 21px;
+  background-color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.fond .entete .entete--like:active {
+  animation: coeur 2s;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+  animation-fill-mode: forwards;
+}
+@keyframes coeur {
+  0% {
+    font-weight: 800;
+    opacity: 0;
+  }
+  50% {
+    font-weight: 800;
+    background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+  }
+  100% {
+    font-weight: 800;
+    background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+  }
 }
 
 .carte {
