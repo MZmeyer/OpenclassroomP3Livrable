@@ -51,7 +51,7 @@ height: 175px;
 
         .entete--like:active{
             
-            font-weight: 800;
+            
             animation: coeur 2s;
             animation-direction: alternate;            
             background-clip: text;
@@ -61,22 +61,19 @@ height: 175px;
             
             
             @keyframes coeur {
-                0% { 
-                    font-weight: 800;
+               from { 
+                    
                   opacity: 0;
+                  
               }
             
-              50% { 
-                font-weight: 800;
+              to { 
+                opacity: 1;
                   background-image: linear-gradient(to bottom, #9356DC,#FF79DA);
                   
                 }
                 
-                100% { 
-                    font-weight: 800;
-                  background-image: linear-gradient(to bottom, #9356DC,#FF79DA);
-                  
-                  }
+                
               }        
         }
     }
@@ -97,7 +94,16 @@ height: 175px;
     .menu{            
         
         &--titre{
-            border-bottom: solid 3px green ;
+            position: relative;
+            &::after {
+                content:'';
+                position: absolute;
+                background-color:#99E2D0;
+                width: 12%;
+                height: 3px;
+                bottom: 0;
+                left:0;
+              }
         }
         &--choix{
             animation-name: showup;
