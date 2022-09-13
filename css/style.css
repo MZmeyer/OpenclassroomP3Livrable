@@ -216,8 +216,13 @@ body a {
   -webkit-background-clip: text;
   color: transparent;
 }
+.fond .entete--like i:active {
+  font-weight: 800;
+}
 .fond .entete .entete--like:active {
+  font-weight: 800;
   animation: coeur 2s;
+  animation-direction: alternate;
   background-clip: text;
   background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
   animation-fill-mode: forwards;
