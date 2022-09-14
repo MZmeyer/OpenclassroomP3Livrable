@@ -146,7 +146,7 @@ height: 175px;
                 }
             }    
 
-
+               
             overflow: hidden;                                    
             display: flex;
             background-color:white;
@@ -154,13 +154,13 @@ height: 175px;
             height: 65px;
             width: 100%;
             margin-bottom: 10px;
-            &:hover > .choix--prix {  
+            &:active > .choix--prix {  
                 transition: all 400ms ease-in-out;                  
                     
                 transform:  translateX(-70px);
             
                 }
-            &:hover > .choix--valid {
+            &:active > .choix--valid {
                 transition: all 330ms ease-in-out;                    
                     
                 transform:  translateX(-70px);
@@ -181,6 +181,8 @@ height: 175px;
                 
             }
             .choix--prix{
+                display: flex;
+                justify-content: center;
                 background-color: white;
                 width: 60px;
                 padding-top: 20px;

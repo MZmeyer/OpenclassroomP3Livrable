@@ -35,6 +35,29 @@ body a {
   padding: 10px 0px 5px 0px;
 }
 
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: white;
+  opacity: 0.9;
+  animation: loader 0.01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
 .localisation {
   display: flex;
   align-items: center;
@@ -300,11 +323,11 @@ body a {
     opacity: 1;
   }
 }
-.carte .menu--choix:hover > .choix--prix {
+.carte .menu--choix:active > .choix--prix {
   transition: all 400ms ease-in-out;
   transform: translateX(-70px);
 }
-.carte .menu--choix:hover > .choix--valid {
+.carte .menu--choix:active > .choix--valid {
   transition: all 330ms ease-in-out;
   transform: translateX(-70px);
 }
@@ -322,6 +345,8 @@ body a {
   margin: 2px 2px 2px 2px;
 }
 .carte .menu--choix .choix--prix {
+  display: flex;
+  justify-content: center;
   background-color: white;
   width: 60px;
   padding-top: 20px;
