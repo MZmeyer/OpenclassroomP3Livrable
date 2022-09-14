@@ -42,14 +42,19 @@ body a {
   left: 0;
   top: 0;
   background-color: white;
-  opacity: 0.9;
-  animation: loader 0.01s;
-  animation-delay: 1.75s;
+  opacity: 1;
+  animation: loader 2s;
+  animation-delay: 2s;
   animation-fill-mode: both;
   z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.loader--anim {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
 }
 @keyframes loader {
   100% {
@@ -58,6 +63,63 @@ body a {
   }
 }
 
+.bar {
+  width: 10px;
+  height: 70px;
+  background: #fff;
+  display: inline-block;
+  transform-origin: bottom center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  animation: onde 1.5s linear infinite;
+}
+
+.bar1 {
+  animation-delay: 0.1s;
+}
+
+.bar2 {
+  animation-delay: 0.2s;
+}
+
+.bar3 {
+  animation-delay: 0.3s;
+}
+
+.bar4 {
+  animation-delay: 0.4s;
+}
+
+.bar5 {
+  animation-delay: 0.5s;
+}
+
+.bar6 {
+  animation-delay: 0.6s;
+}
+
+.bar7 {
+  animation-delay: 0.7s;
+}
+
+.bar8 {
+  animation-delay: 0.8s;
+}
+
+@keyframes onde {
+  0% {
+    transform: scaleY(0.1);
+    background: #FF79DA;
+  }
+  50% {
+    transform: scaleY(1);
+    background: #9356DC;
+  }
+  100% {
+    transform: scaleY(0.1);
+    background: transparent;
+  }
+}
 .localisation {
   display: flex;
   align-items: center;
@@ -171,6 +233,7 @@ body a {
 }
 .restaurant .restaurant--article .article--description {
   display: flex;
+  justify-content: space-between;
 }
 .restaurant .restaurant--article:hover {
   box-shadow: 5px 5px 5px 5px darkgray;
@@ -189,7 +252,7 @@ body a {
   margin: 5px 0px 0px 5px;
 }
 .restaurant .restaurant--article .article--icone i {
-  margin: 30px 5px 5px 105px;
+  margin: 30px 25px 0px 0px;
 }
 
 .header {
