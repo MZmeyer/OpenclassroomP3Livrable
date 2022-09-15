@@ -53,7 +53,7 @@ body a {
 }
 .loader--anim {
   display: flex;
-  width: 50%;
+  width: 200px;
   justify-content: space-around;
 }
 @keyframes loader {
@@ -66,7 +66,7 @@ body a {
 .bar {
   width: 10px;
   height: 70px;
-  background: #fff;
+  background: white;
   display: inline-block;
   transform-origin: bottom center;
   border-top-right-radius: 20px;
@@ -251,8 +251,35 @@ body a {
 .restaurant .restaurant--article .article--nom p {
   margin: 5px 0px 0px 5px;
 }
-.restaurant .restaurant--article .article--icone i {
-  margin: 30px 25px 0px 0px;
+.restaurant .restaurant--article .article--icone {
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 21px;
+  width: 21px;
+  background-color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.restaurant .restaurant--article .article--icone i:hover {
+  font-weight: 800;
+}
+.restaurant .restaurant--article .article--icone:hover {
+  animation: coeur 2s;
+  animation-direction: alternate;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+  animation-fill-mode: forwards;
+}
+@keyframes coeur {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+  }
 }
 
 .header {
@@ -302,10 +329,10 @@ body a {
   -webkit-background-clip: text;
   color: transparent;
 }
-.fond .entete--like i:active {
+.fond .entete--like i:hover {
   font-weight: 800;
 }
-.fond .entete .entete--like:active {
+.fond .entete .entete--like:hover {
   animation: coeur 2s;
   animation-direction: alternate;
   background-clip: text;

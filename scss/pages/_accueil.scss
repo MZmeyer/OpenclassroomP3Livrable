@@ -15,7 +15,7 @@
     justify-content: center;
         &--anim{
         display: flex;
-        width: 50%;
+        width: 200px;
         justify-content: space-around;
         }
     @keyframes loader {
@@ -29,7 +29,7 @@
 .bar {
     width: 10px;
     height: 70px;
-    background: #fff;
+    background: white;
     display: inline-block;
     transform-origin: bottom center;
     border-top-right-radius: 20px;
@@ -213,13 +213,37 @@
 
                     }
                     .article--icone {
-                        
-                        & i{
-                            margin: 30px 25px 0px 0px;
-                            
-                            
-                        }
-                                        
+                      margin-left: auto;
+                      margin-top: 10px;
+                      margin-right: 10px;
+                      height: 21px;
+                      width: 21px;
+                      background-color: black; 
+                      background-clip: text;
+                      -webkit-background-clip: text;
+                      color: transparent;                     
+                        & i:hover{
+                          font-weight: 800;
+                        }                
                     }
+                    .article--icone:hover{         
+                      animation: coeur 2s;
+                      animation-direction: alternate;            
+                      background-clip: text;
+                      background-image: linear-gradient(to bottom, #9356DC,#FF79DA);
+                      animation-fill-mode: forwards;           
+                                  
+                      @keyframes coeur {
+                         from {                    
+                            opacity: 0;                  
+                        }            
+                        to { 
+                          opacity: 1;
+                          background-image: linear-gradient(to bottom, #9356DC,#FF79DA);
+                           
+                          }
+                                          
+                        }        
+                  }
             }    
  }
