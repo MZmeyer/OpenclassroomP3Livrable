@@ -357,12 +357,12 @@ body a {
 }
 .carte .menu--titre {
   position: relative;
+  width: fit-content;
 }
 .carte .menu--titre::after {
-  content: "";
   position: absolute;
   background-color: #99E2D0;
-  width: 12%;
+  width: 60%;
   height: 3px;
   bottom: 0;
   left: 0;
@@ -422,16 +422,20 @@ body a {
   transform: translateX(-70px);
 }
 .carte .menu--choix .choix--texte {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   justify-content: space-around;
   z-index: 1;
   padding: 10px 10px 15px 5px;
 }
 .carte .menu--choix .choix--texte h4 {
+  display: block;
+  width: fit-content;
   margin: 2px 2px 2px 2px;
 }
 .carte .menu--choix .choix--texte p {
+  display: block;
+  width: fit-content;
   margin: 2px 2px 2px 2px;
 }
 .carte .menu--choix .choix--prix {
