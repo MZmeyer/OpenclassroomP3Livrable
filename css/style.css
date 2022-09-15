@@ -262,6 +262,9 @@ body a {
   -webkit-background-clip: text;
   color: transparent;
 }
+.restaurant .restaurant--article .article--icone i {
+  padding-left: 5px;
+}
 .restaurant .restaurant--article .article--icone i:hover {
   font-weight: 800;
 }

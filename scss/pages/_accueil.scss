@@ -221,7 +221,10 @@
                       background-color: black; 
                       background-clip: text;
                       -webkit-background-clip: text;
-                      color: transparent;                     
+                      color: transparent; 
+                        & i{
+                          padding-left: 5px;
+                        }                    
                         & i:hover{
                           font-weight: 800;
                         }                
