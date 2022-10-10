@@ -247,6 +247,26 @@ body a {
   width: 100%;
   border-radius: 25px 25px 0px 0px;
 }
+.restaurant .restaurant--article .article--new1{
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 815px;
+  right: 42px;
+  width: fit-content;
+}
+.restaurant .restaurant--article .article--new2{
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1093px;
+  right: 42px;
+  width: fit-content;
+}
 .restaurant .restaurant--article .article--nom h3 {
   margin: 5px 0px 0px 5px;
 }
@@ -363,28 +383,37 @@ body a {
   flex-direction: column;
   margin: 20px 10px 20px 10px;
 }
+.carte .menu{
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 1rem;
+}
 .carte .menu--titre {
   position: relative;
   width: fit-content;
+  padding-bottom: 10px;
 }
-.carte .menu--titre::after {
-  position: absolute;
-  background-color: #99E2D0;
-  width: 60%;
-  height: 3px;
-  bottom: 0;
-  left: 0;
+.carte .menu--titre:after {
+  content: "";
+    width: 3rem;
+    height: 0.25rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 .carte .menu--choix {
   animation-name: showup;
   animation-duration: 3s;
   overflow: hidden;
   display: flex;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 2px lightgrey;
   background-color: white;
-  border-radius: 12px;
-  height: 75px;
-  width: 100%;
-  margin-bottom: 10px;
+  border-radius: 12px;  
+  max-width: 100%;
+  margin: 1rem 0;
+  padding: 8px;
 }
 .carte .menu--choix:nth-child(1) {
   animation-delay: 0ms;
@@ -421,52 +450,71 @@ body a {
     opacity: 1;
   }
 }
-.carte .menu--choix:active > .choix--prix {
+/*.carte .menu--choix:hover > .choix--prix {
   transition: all 400ms ease-in-out;
   transform: translateX(-70px);
+}*/
+.carte .menu--choix:hover > .choix--valid {
+  margin: -1rem -1rem -1rem 1rem;
+  
+
 }
-.carte .menu--choix:active > .choix--valid {
-  transition: all 330ms ease-in-out;
-  transform: translateX(-70px);
+.carte .menu--choix:hover > .choix--valid i{  
+  transform: rotate(360deg);
+  transition-duration: 1s;
+
 }
+  
 .carte .menu--choix .choix--texte {
-  display: inline-block;
+  
+  display: block;
+  flex: 1;
   flex-direction: column;
-  justify-content: space-around;
-  z-index: 1;
+  justify-content: space-around;  
   padding: 10px 10px 15px 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .carte .menu--choix .choix--texte h4 {
   display: block;
-  width: fit-content;
-  margin: 2px 2px 2px 2px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;  
+  margin: 0;
 }
 .carte .menu--choix .choix--texte p {
-  display: block;
-  width: fit-content;
-  margin: 2px 2px 2px 2px;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .carte .menu--choix .choix--prix {
+  font-weight: 700;
   display: flex;
-  justify-content: center;
-  background-color: white;
-  width: 60px;
-  padding-top: 20px;
-  padding-right: 10px;
-  margin-left: auto;
-  font-weight: bold;
-  z-index: 2;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 0.5rem;
 }
 .carte .menu--choix .choix--valid {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  width: 60px;
+  padding-right: 10px;
+  width: 4rem;
   margin: -1rem -5rem -1rem 1rem;
   background-color: aquamarine;
+  transition-duration: 0.5s;
 }
 .carte .menu--choix .choix--valid i{
-padding-top: 16px;
+height: 1.6rem;
+width: 1.6rem;
+background-color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 100px;
+color: aquamarine;
 }
 
 .commande {
@@ -490,11 +538,10 @@ padding-top: 16px;
 
 .footer {
   background-color: rgb(48, 46, 46);
-  color: white;
-  position: relative;
-  bottom: 0;
+  color: white;  
+  padding-bottom: 20px;  
+  bottom: 0px;
   width: 100%;
-  padding-bottom: 20px;
 }
 .footer--h2 {
   font-family: "Shrikhand", cursive;
@@ -528,6 +575,34 @@ padding-top: 16px;
     border-radius: 25px;  
     box-shadow: 3px 3px 3px 3px lightgray;
     transition: all 200ms;
+  }
+  .restaurant .restaurant--article .article--new1{
+    background-color: #99e2d0;
+    color: #1b6150;
+    padding: 0.5rem;
+    border-radius: 0.125rem;
+    position: absolute;
+    top: 770px;
+    right: 690px;
+    width: fit-content;
+  }
+  .restaurant .restaurant--article .article--new2{
+    background-color: #99e2d0;
+    color: #1b6150;
+    padding: 0.5rem;
+    border-radius: 0.125rem;
+    position: absolute;
+    top: 770px;
+    right: 45px;
+    width: fit-content;
+  }
+  .carte{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 4rem;
+  }
+  .fond{
+    padding-bottom: 137px;
   }
 }
 
