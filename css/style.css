@@ -253,8 +253,8 @@ body a {
   padding: 0.5rem;
   border-radius: 0.125rem;
   position: absolute;
-  top: 815px;
-  right: 42px;
+  top: 30px;
+  right: 20px;
   width: fit-content;
 }
 .restaurant .restaurant--article .article--new2{
@@ -263,8 +263,8 @@ body a {
   padding: 0.5rem;
   border-radius: 0.125rem;
   position: absolute;
-  top: 1093px;
-  right: 42px;
+  top: 30px;
+  right: 20px;
   width: fit-content;
 }
 .restaurant .restaurant--article .article--nom h3 {
@@ -569,6 +569,7 @@ color: aquamarine;
   }
   .restaurant--article{                
     display: flex;
+    position: relative;
     flex-direction: column;    
     height: 250px;
     width: 580px;
@@ -582,8 +583,8 @@ color: aquamarine;
     padding: 0.5rem;
     border-radius: 0.125rem;
     position: absolute;
-    top: 770px;
-    right: 690px;
+    top: 30px;
+    right: 20px;
     width: fit-content;
   }
   .restaurant .restaurant--article .article--new2{
@@ -592,8 +593,8 @@ color: aquamarine;
     padding: 0.5rem;
     border-radius: 0.125rem;
     position: absolute;
-    top: 770px;
-    right: 45px;
+    top: 30px;
+    right: 20px;
     width: fit-content;
   }
   .carte{
@@ -617,6 +618,7 @@ color: aquamarine;
   }
   .restaurant--article{                
     display: flex;
+    position: relative;
     flex-direction: column;    
     height: 245px;
     width: 330px;
@@ -626,10 +628,30 @@ color: aquamarine;
   
 }
 }
-
+@media screen and (max-width: 768px) {
+  .restaurant--article{                
+    display: flex;
+    position: relative;
+    flex-direction: column;    
+    height: 245px;
+    width: 330px;
+    border-radius: 25px;  
+    box-shadow: 3px 3px 3px 3px lightgray;
+    transition: all 200ms;
+}
+.restaurant .restaurant--bloc {
+  display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  } 
+}
 @media screen and (max-width: 440px) {
   .restaurant--article{                
     display: flex;
+    position: relative;
     flex-direction: column;    
     height: 245px;
     width: 330px;
